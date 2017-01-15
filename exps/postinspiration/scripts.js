@@ -7,5 +7,7 @@ var postInspiration = 'https://docs.google.com/spreadsheets/d/1hoRENWMGoEWdXCTQA
 // Load top ten switch hitters.
 $('#posteady').sheetrock({
   url: postInspiration,
-  query: "select E,F,G"
+  query: "SELECT column FROM table
+ORDER BY RAND()
+LIMIT 1"
 });
