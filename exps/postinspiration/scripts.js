@@ -13,5 +13,5 @@ var postInspiration = 'https://docs.google.com/spreadsheets/d/1hoRENWMGoEWdXCTQA
 
 // Load top ten switch hitters.
 $('#posteady').sheetrock({
-  url: mySpreadsheet
+  url: postInspiration
 });
