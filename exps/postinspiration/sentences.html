@@ -8,12 +8,16 @@
 	  <meta name="description" content="Sentence Generator">
 	  <meta name="author" content="SitePoint">
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.2/dist/sheetrock.min.js"></script>
+
 	  <link rel="stylesheet" href="style.css?v=1.0">
 
 	  <!--[if lt IE 9]>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
 	  <![endif]-->
-	  
+
 	</head>
 
 	<body>
@@ -23,26 +27,28 @@
 	<table id="posteady" class="table table-condensed table-striped"></table>
 
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.2/dist/sheetrock.min.js"></script>
-	<!-- <script src="scripts.js"></script> -->
+
+
+	
+	
+	<script src="scripts.js"></script>
+
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
-	<script type='text/javascript'>    
-	  var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1hoRENWMGoEWdXCTQAwJeSYsayPm1-jbodkt_ZBF1dS0/edit#gid=0';
+<script type='text/javascript'>    
+  var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1hoRENWMGoEWdXCTQAwJeSYsayPm1-jbodkt_ZBF1dS0/pubhtml?gid=0&single=true';
 
-	  function init() {
-	    Tabletop.init( { key: publicSpreadsheetUrl,
-	                     callback: showInfo,
-	                     simpleSheet: true } )
-	  }
+  function init() {
+    Tabletop.init( { key: 'publicSpreadsheetUrl',
+                     callback: showInfo,
+                     simpleSheet: true } )
+  }
 
-	  function showInfo(data, tabletop) {
-	    alert('Successfully processed!')
-	    console.log(data);
-	  }
+  function showInfo(data, tabletop) {
+    alert('Successfully processed!')
+    console.log(data);
+  }
 
-	  window.addEventListener('DOMContentLoaded', init)
-	</script>
-
+  window.addEventListener('DOMContentLoaded', init)
+</script>
 
 </html>
