@@ -1,2 +1,2 @@
 # posteady.github.io
-Post Eady Experiements
+Post Eady Experiments
